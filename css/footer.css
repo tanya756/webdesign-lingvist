@@ -1,0 +1,183 @@
+@charset "utf-8";
+/* CSS Document */
+
+.list-group {
+  margin: 0;
+  font-size: 15px;
+  padding: 10px 0;
+  text-align: left;
+}
+.list-group-item-heading h4 {
+  color: white;
+  font-size: 18px;
+  font-weight: 800;
+  padding-bottom: 15px;
+}
+
+.list-group-item {
+  line-height: 160%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: unset;
+}
+.list-group-item:first-child,
+.list-group-item:last-child {
+  border-radius: 0;
+  border-bottom: 0;
+}
+a:link,
+a:focus {
+  color: white;
+  text-decoration: none;
+}
+/* 已連結過 */
+a:visited {
+  text-decoration: none;
+  color: #eef0f4;
+}
+/* 滑鼠移至連結 */
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+/* 選擇的連結 */
+a:active {
+  color: white;
+  text-decoration: none;
+}
+/*footer-------------------*/
+.footerTOP {
+  display: block;
+  border-top: 1px solid #e2b4ff;
+}
+
+.footer_lingvist_logo {
+  background: url(/imgs/common/Lingvist_logo_new_white.svg) no-repeat;
+  width: 140px;
+  height: 47px;
+  text-indent: -9999px;
+  float: left;
+  background-size: 140px 47px;
+  -moz-background-size: 140px 47px;
+  -webkit-background-size: 140px 47px;
+  margin: 30px 0px 0px 30px;
+  display: inline-block;
+}
+
+.footer_linktel_logo {
+  background: url(/imgs/common/Linktel_logo_white.svg) no-repeat;
+  width: 90px;
+  height: 42px;
+  text-indent: -9900px;
+  background-size: 90px 42px;
+  -moz-background-size: 90px 42px;
+  -webkit-background-size: 90px 42px;
+  padding: 0px 0px 0px 0px;
+  margin: 10px 0px 0px 30px;
+  display: inline-block;
+}
+
+.copyright_box {
+  padding: 10px 0;
+  margin-bottom: 0px;
+  position: relative;
+}
+.copyright {
+  padding-bottom: 20px;
+  color: #2c3143;
+  text-align: center;
+  font-size: 14px;
+}
+.footer_sitemap {
+  display: block;
+}
+.footer_map {
+  width: 100%;
+  padding: 30px 0;
+  background-color: #2c3143;
+}
+
+/*小版設定＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+
+@media (max-width: 768px) {
+  .footerbgs {
+    background-color: #2c3143;
+    padding: 30px;
+  }
+  .panel-default {
+    padding-right: 15px;
+    margin-top: 0px;
+  }
+  .panel-group {
+    margin: 0px -15px 0px -15px;
+    font-size: 15px;
+  }
+  .panelanel-heading h4 {
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .panelanel-heading {
+    /*padding: 0 15px 5px 15px;*/
+    margin: 0 -15px 0 0;
+    line-height: 0.5;
+    background: url(/imgs/common/chevron-right-solid.svg) no-repeat right;
+  }
+
+  .panelanel-heading a h4.active:visited {
+    color: #97bacf;
+    text-decoration: none;
+  }
+  .panelanel-heading a h4:hover {
+    color: #97bacf;
+    border-bottom: 0;
+    border-right: 0;
+    border-left: 0;
+    text-decoration: none;
+  }
+  .panelanel-heading a h4.active:hover {
+    background-color: #97bacf;
+  }
+
+  .list-group-item {
+    line-height: 1.5;
+  }
+  .copyright {
+    padding-bottom: 0px;
+    color: #2c3143;
+    text-align: center;
+    font-size: 14px;
+  }
+}
+/*中大版設定＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+/*@media (min-width: 768px) and (max-width: 992px) {
+		.list-group-item-heading h4{
+				margin-bottom: 5px;
+				
+				}
+	}*/
+@media (min-width: 1200px) {
+  a.list-group-item.active {
+    background-color: #2c3143;
+    color: white;
+    border: 0;
+    text-decoration: underline;
+  }
+  a.list-group-item.active:hover {
+    background-color: #2c3143;
+    color: white;
+    border: 0;
+    text-decoration: underline;
+  }
+  a.list-group-item:hover {
+    background-color: #2c3143;
+    color: #666;
+    border: 0;
+    text-decoration: none;
+  }
+  .list-group-item-heading h4 {
+    margin-bottom: 5px;
+    text-align: left;
+  }
+}
